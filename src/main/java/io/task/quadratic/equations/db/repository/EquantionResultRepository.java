@@ -1,9 +1,11 @@
 package io.task.quadratic.equations.db.repository;
 
 import org.springframework.data.mongodb.repository.MongoRepository;
+import org.springframework.stereotype.Component;
 
-import io.task.quadratic.equations.db.entity.EquantionsResult;
+import io.task.quadratic.equations.db.entity.EquantionResult;
 
-public interface EquantionResultRepository extends MongoRepository<EquantionsResult, String> {
+@Component
+public interface EquantionResultRepository extends MongoRepository<EquantionResult, String> {
 
 }

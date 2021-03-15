@@ -14,7 +14,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @Document(collection = "equantion_result")
-public class EquantionsResult {
+public class EquantionResult {
     @Id
     private String id;
     private Equantion equantion;
