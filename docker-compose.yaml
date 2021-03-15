@@ -7,7 +7,8 @@ services:
     - 8281:8281
     depends_on:
     - mongo
-    network_mode: host
+    networks:
+    - net
     
   mongo:
     image: mongo
@@ -16,5 +17,8 @@ services:
       MONGO_INITDB_ROOT_PASSWORD: root
     ports:
     - 27017:27017
-    network_mode: host
+    networks:
+    - net
     
+networks:
+  net: null
